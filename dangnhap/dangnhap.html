@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon.ico"
+      type="images/vnd.microsoft.icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Đăng Nhập</title>
+  </head>
+  <body>
+    <header>
+      <a href="/trangchu/logo.png">
+        <img src="/trangchu/logo.png" alt="logo" id="logo" />
+      </a>
+      <img id="header-img1" src="/trangchu/header-img1.png" alt="header-img1" />
+      <img id="header-img2" src="/trangchu/header-img2.png" alt="header-img2" />
+      <img id="header-img3" src="/trangchu/header-img3.png" alt="header-img3" />
+      <nav>
+        <a href="/trangchu/trangchu.html">Trang Chủ</a>
+        <a href="/gioithieu/gioithieu.html">Giới Thiệu</a>
+        <a href="/sanpham/sanpham.html">Sản Phẩm</a>
+        <a href="/tintuc/tinhtuc.html">Tin Tức</a>
+        <a href="/dangnhap/dangnhap.html">Đăng Nhập</a>
+        <a href="/dangky/dangky.html">Đăng Ký</a>
+        <a href="/lienhe/lienhe.html">Liên Hệ</a>
+      </nav>
+      <div class="search-box">
+        <input type="search" placeholder="Nhập nội dung cần tìm..." />
+        <img src="/trangchu/search.svg" alt="search" id="search" />
+        <img
+          src="/trangchu/cart-shopping.svg"
+          alt="cart-shopping"
+          id="cart-shopping"
+        />
+      </div>
+    </header>
+    <main>
+      <form method="post" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+          <legend>ĐĂNG NHẬP</legend>
+          <table>
+            <tr>
+              <td colspan="2"><img src="userlogin.png" alt="" /></td>
+            </tr>
+            <tr>
+              <td><label for="#email">Nhập email</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="email"
+                  id="email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="#psw">Mật khẩu</label></td>
+              <td>
+                <input
+                  type="password"
+                  name="psw"
+                  placeholder="Nhập mật khẩu"
+                  id="psw"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="submit" value="Đăng Nhập" />
+                <input type="reset" value="Hủy" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>
+                  <b>
+                    Bạn quên <a href="">Mật Khẩu?</a>
+                    <input type="checkbox" name="remember" checked />Ghi nhớ cho
+                    lần đăng nhập sau
+                  </b>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>
+        &#169; 2021 Bản quyền thuộc về FreeezeVN.
+        <a href="#!"
+          ><img src="/trangchu/facebook.svg" alt="facebook" style="width: 10px"
+        /></a>
+        <a href="#!"
+          ><img src="/trangchu/twitter.svg" alt="twitter" style="width: 15px"
+        /></a>
+        <a href="#!"
+          ><img
+            src="/trangchu/pinterest.svg"
+            alt="pinterest"
+            style="width: 15px"
+        /></a>
+        <a href="#logo"
+          ><img src="/trangchu/top.png" alt="top" id="top" style="width: 50px"
+        /></a>
+      </p>
+    </footer>
+  </body>
+</html>
