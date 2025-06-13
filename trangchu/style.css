@@ -163,3 +163,83 @@ footer #top {
   text-align: center;
   z-index: 100;
 }
+/* =====================main-trangchu====================== */
+article {
+  display: grid;
+  grid-template-areas: "article-cell";
+  grid-template-rows: auto;
+}
+article h1 {
+  margin: 12px 0 16px;
+  text-transform: uppercase;
+  color: #f90860;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 34px;
+  position: relative;
+}
+article h1::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 60%;
+  margin: 12px 0 16px;
+  width: 200px;
+  height: 3px;
+  transform: skewX(-12deg) translateX(-50%);
+  background: radial-gradient(#cddc39, #fff);
+}
+article h2 {
+  margin: 5px 0 10px;
+  color: #f90860;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+}
+article h3 {
+  margin: 5px 0 10px;
+  color: #f90860;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+}
+.media-left img,
+.media-right p {
+  float: left;
+}
+.media-left p,
+.media-right video {
+  float: right;
+}
+.media-left img,
+.media-right video {
+  width: 30%;
+}
+.media-left p,
+.media-right p {
+  width: 69%;
+  padding: 0 5px;
+  text-align: justify;
+}
+.two-cols {
+  column-count: 2;
+}
+.two-cols > h3 {
+  break-before: column;
+}
+.order {
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+.order > div {
+  display: inline-block;
+  border: 1px solid #ed4190;
+  border-radius: 5px;
+  padding-top: 5px;
+  width: 24%;
+}
