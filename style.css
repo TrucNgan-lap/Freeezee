@@ -15,10 +15,13 @@ body {
     "main-cell"
     "footer-cell";
 }
+.commom {
+  text-align: center;
+}
 /* =====================main====================== */
 main {
   display: grid;
-  grid-area: "main-cell";
+  grid-area: main-cell;
   border: 1px solid #ccc7c8;
   border-radius: 5px;
   padding: 0 5px;
@@ -45,13 +48,27 @@ main.two-cols__left {
   grid-template-columns: 3fr 1fr;
   grid-template-areas: "article-cell right-cell";
 }
+aside.aside-right,
+aside.aside-left {
+  margin: 2px;
+  padding: 5px;
+  color: #000;
+  text-align: justify;
+  text-justify: auto;
+}
+aside.aside-left {
+  grid-area: right-cell;
+}
+aside.aside-right {
+  grid-area: left-cell;
+}
 main.three-cols {
   grid-template-areas: 1fr 3fr 1fr;
   grid-template-columns: "left-cell article-cell right-cell";
 }
 /* =====================header====================== */
 header {
-  grid-area: "header-cell";
+  grid-area: header-cell;
   margin-bottom: 2px;
   border: 1px solid #ccc7c8;
   border-radius: 5px;
@@ -144,7 +161,7 @@ main img {
 }
 /* =====================footer====================== */
 footer {
-  grid-area: "footer-cell";
+  grid-area: footer-cell;
   margin-top: 2px;
   border: 1px solid #ccc7c8;
   border-radius: 5px;
@@ -170,7 +187,7 @@ article {
   grid-template-areas: "article-cell";
   grid-template-rows: auto;
 }
-article h1 {
+h1 {
   margin: 12px 0 16px;
   text-transform: uppercase;
   color: #f90860;
@@ -181,18 +198,18 @@ article h1 {
   line-height: 34px;
   position: relative;
 }
-article h1::before {
+h1::before {
   position: absolute;
   content: "";
   left: 50%;
-  top: 60%;
+  top: 100%;
   margin: 12px 0 16px;
   width: 200px;
   height: 3px;
   transform: skewX(-12deg) translateX(-50%);
   background: radial-gradient(#cddc39, #fff);
 }
-article h2 {
+h2 {
   margin: 5px 0 10px;
   color: #f90860;
   font-size: 24px;
@@ -200,7 +217,7 @@ article h2 {
   font-weight: 300;
   line-height: 28px;
 }
-article h3 {
+h3 {
   margin: 5px 0 10px;
   color: #f90860;
   font-size: 20px;
@@ -282,4 +299,38 @@ section.products p {
 }
 section.products div > img {
   margin: auto;
+}
+/* =====================main-lienhe====================== */
+.fa {
+  padding: 4px;
+  width: 20px;
+  color: #ed4190;
+  text-align: center;
+  background-color: #cddc39;
+  cursor: pointer;
+}
+.form-icons {
+  display: inline-block;
+  padding: 4px;
+  min-width: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #cddc39;
+}
+form {
+  margin: auto;
+  width: 50%;
+}
+/* =====================main-tintuc====================== */
+.news p {
+  float: left;
+  width: 75%;
+}
+.news img {
+  float: right;
+  width: 25%;
+}
+/* =====================main-gioithieu====================== */
+.introduces img {
+  width: 100%;
 }
